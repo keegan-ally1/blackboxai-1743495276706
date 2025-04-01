@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Sacrrred Stylezzz</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">Sacrrred Stylezzz</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="products.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Products</a>
+                    <a href="reviews.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Reviews</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Filters -->
+    <div class="bg-white shadow-md py-4 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap gap-4">
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-full filter-btn active" data-filter="all">All Products</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full filter-btn" data-filter="hoodies">Hoodies</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full filter-btn" data-filter="tshirts">T-Shirts</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-3xl font-bold text-center mb-12">Our Collection</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-container">
+                <!-- Hoodie 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-item" data-category="hoodies">
+                    <img src="https://images.pexels.com/photos/1479067/pexels-photo-1479067.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Faith Hoodie Black" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Faith Hoodie - Black</h3>
+                        <p class="text-gray-600 mt-2">Premium quality hoodie with cross embroidery</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">KES 2,800</span>
+                            <button class="px-3 py-1 bg-blue-500 text-white text-sm font-bold rounded hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hoodie 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-item" data-category="hoodies">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Sacrrred Hoodie Grey" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Sacrrred Hoodie - Grey</h3>
+                        <p class="text-gray-600 mt-2">Comfortable pullover with our logo print</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">KES 2,500</span>
+                            <button class="px-3 py-1 bg-blue-500 text-white text-sm font-bold rounded hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T-Shirt 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-item" data-category="tshirts">
+                    <img src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Prayer Warrior Tee" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Prayer Warrior Tee</h3>
+                        <p class="text-gray-600 mt-2">100% cotton tee with inspirational design</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">KES 1,200</span>
+                            <button class="px-3 py-1 bg-blue-500 text-white text-sm font-bold rounded hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T-Shirt 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-item" data-category="tshirts">
+                    <img src="https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Jesus Saves Tee" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Jesus Saves Tee</h3>
+                        <p class="text-gray-600 mt-2">Classic fit with bold faith message</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">KES 1,500</span>
+                            <button class="px-3 py-1 bg-blue-500 text-white text-sm font-bold rounded hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessory 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-item" data-category="accessories">
+                    <img src="https://images.pexels.com/photos/1030946/pexels-photo-1030946.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Faith Cap" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Faith Cap</h3>
+                        <p class="text-gray-600 mt-2">Adjustable cap with embroidered cross</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">KES 1,800</span>
+                            <button class="px-3 py-1 bg-blue-500 text-white text-sm font-bold rounded hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessory 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden product-item" data-category="accessories">
+                    <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Bible Verse Tote Bag" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Bible Verse Tote Bag</h3>
+                        <p class="text-gray-600 mt-2">Eco-friendly cotton tote with scripture print</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">KES 1,000</span>
+                            <button class="px-3 py-1 bg-blue-500 text-white text-sm font-bold rounded hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sacrrred Stylezzz</h3>
+                    <p>Christian clothing that glorifies God through fashion.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-300 transition duration-300">Home</a></li>
+                        <li><a href="products.html" class="hover:text-blue-300 transition duration-300">Products</a></li>
+                        <li><a href="reviews.html" class="hover:text-blue-300 transition duration-300">Reviews</a></li>
+                        <li><a href="about.html" class="hover:text-blue-300 transition duration-300">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-300 transition duration-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300 transition duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Sacrrred Stylezzz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.product-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-blue-500', 'text-white'));
+                    filterButtons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-700'));
+                    
+                    button.classList.add('active', 'bg-blue-500', 'text-white');
+                    button.classList.remove('bg-gray-200', 'text-gray-700');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    // Filter products
+                    productItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Mobile menu toggle
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
