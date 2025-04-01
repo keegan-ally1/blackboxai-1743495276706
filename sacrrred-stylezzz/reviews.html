@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Sacrrred Stylezzz</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .review-card {
+            transition: transform 0.3s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">Sacrrred Stylezzz</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="products.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Products</a>
+                    <a href="reviews.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Reviews</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reviews Hero -->
+    <div class="bg-gradient-to-r from-purple-500 to-blue-600 py-20 text-center text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">What Our Customers Say</h1>
+            <p class="text-xl">Real experiences from our Sacrrred Stylezzz family</p>
+        </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 review-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Sarah M." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Sarah M.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Faith Hoodie is my absolute favorite! The quality is amazing and I get compliments every time I wear it. Plus, it's a great conversation starter about my faith."</p>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-sm text-gray-500">Nairobi, Kenya</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 review-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="David K." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="font-semibold">David K.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I bought the Prayer Warrior Tee for my entire youth group. The material is comfortable and the message is powerful. The shipping was faster than expected too!"</p>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-sm text-gray-500">Mombasa, Kenya</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 review-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Grace W." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Grace W.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Bible Verse Tote is both stylish and practical. I use it for groceries and it's held up perfectly. Love that it shares God's word wherever I go!"</p>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-sm text-gray-500">Kisumu, Kenya</span>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 review-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Michael T." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Michael T.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Sacrrred Hoodie is incredibly warm and comfortable. The design is subtle yet meaningful. I've already ordered two more for gifts!"</p>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-sm text-gray-500">Nakuru, Kenya</span>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 review-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Esther N." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Esther N.</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I love that Sacrrred Stylezzz combines fashion with faith. The Jesus Saves Tee is my go-to for casual outings. The fabric is soft and the print hasn't faded after multiple washes."</p>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-sm text-gray-500">Eldoret, Kenya</span>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 review-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Pastor James" class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                        <div class="ml-4">
+                            <h3 class="font-semibold">Pastor James</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"As a pastor, I appreciate clothing that reflects Christian values without being overly preachy. The Faith Cap is perfect for my casual days. Highly recommend!"</p>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-sm text-gray-500">Thika, Kenya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Form -->
+    <section class="bg-gray-100 py-12 px-4">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8">Share Your Experience</h2>
+            <form class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="name">Your Name</label>
+                    <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="email">Email (Optional)</label>
+                    <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="rating">Rating</label>
+                    <div class="flex space-x-1">
+                        <i class="far fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-400" data-rating="1"></i>
+                        <i class="far fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-400" data-rating="2"></i>
+                        <i class="far fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-400" data-rating="3"></i>
+                        <i class="far fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-400" data-rating="4"></i>
+                        <i class="far fa-star text-2xl text-gray-300 cursor-pointer hover:text-yellow-400" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating-value" value="0">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="review">Your Review</label>
+                    <textarea id="review" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="photo">Upload Photo (Optional)</label>
+                    <input type="file" id="photo" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sacrrred Stylezzz</h3>
+                    <p>Christian clothing that glorifies God through fashion.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-300 transition duration-300">Home</a></li>
+                        <li><a href="products.html" class="hover:text-blue-300 transition duration-300">Products</a></li>
+                        <li><a href="reviews.html" class="hover:text-blue-300 transition duration-300">Reviews</a></li>
+                        <li><a href="about.html" class="hover:text-blue-300 transition duration-300">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-300 transition duration-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-300 transition duration-300"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Sacrrred Stylezzz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Star rating functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('[data-rating]');
+            const ratingValue = document.getElementById('rating-value');
+
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    ratingValue.value = rating;
+
+                    // Update star display
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.classList.remove('far');
+                            s.classList.add('fas', 'text-yellow-400');
+                        } else {
+                            s.classList.remove('fas', 'text-yellow-400');
+                            s.classList.add('far', 'text-gray-300');
+                        }
+                    });
+                });
+
+                star.addEventListener('mouseover', function() {
+                    const hoverRating = this.getAttribute('data-rating');
+                    stars.forEach((s, index) => {
+                        if (index < hoverRating) {
+                            s.classList.add('text-yellow-400');
+                        }
+                    });
+                });
+
+                star.addEventListener('mouseout', function() {
+                    const currentRating = ratingValue.value;
+                    stars.forEach((s, index) => {
+                        if (index >= currentRating) {
+                            s.classList.remove('text-yellow-400');
+                        }
+                    });
+                });
+            });
+
+            // Mobile menu toggle
+            const btn = document.querySelector('.mobile-menu-button');
+            const menu = document.querySelector('.mobile-menu');
+
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
